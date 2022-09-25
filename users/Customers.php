@@ -11,7 +11,7 @@ class Client extends User {
         $this->favItems = $favItems;
     }
     public function getCustomersInfo(){
-        echo "Customers Indo: " . $this->name . " " . $this->surname ."<br>";
+        echo "Customers Info: " . $this->name . " " . $this->surname ."<br>";
 
     }
 

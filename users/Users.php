@@ -1,14 +1,18 @@
 <?php
+require __DIR__ . '/../address/Address.php';
 class User {
     public $name;
     public $surname;
     private $password;
-    public function __construct($name, $surname, $password, $country, $street, $postalCode)
+
+     //keyword for traits
+    use Address;
+    
+    public function __construct($name, $surname, $password,$street,$city)
     {
         $this->name = $name;
         $this->surname = $surname;
-        $this->country = $country;
-        $this->street = $street ;
-        $this->postalCode = $postalCode;
+        $this->street = $street;
+        $this->city = $city;
     }
 }
